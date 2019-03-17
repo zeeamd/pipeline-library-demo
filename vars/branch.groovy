@@ -1,8 +1,7 @@
 #!/usr/bin/env groovy
 package com.cleverbuilder
 
-def call(String name=null) {
+def call(String name = 'dev') {
   echo "Branch ${name}"
-  git clone --branch ${name} https://github.com/zeeamd/test4jira.git
 }
 
