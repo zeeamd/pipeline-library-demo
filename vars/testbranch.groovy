@@ -8,7 +8,7 @@ def call(String name) {
   Process p = c.execute()
   p.waitFor()
   println "Process exit code: ${p.exitValue()}"
-  println "Std Err: ${p.err.text}"
+  println "Std Out: ${p.err.text}"
   println "Std Out: ${p.in.text}"
 }
 
