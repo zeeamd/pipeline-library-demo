@@ -3,6 +3,7 @@ package com.cleverbuilder
 
 def call(String name) {
   echo "Branch ${name}"
-  java -version
+  def command = "git --version"
+  println ("[$command]")
 }
 
