@@ -3,7 +3,7 @@ package com.cleverbuilder
 
 def call(String name) {
   echo "Branch ${name}"
-  def command = "git --version"
+  def command = "git clone https://github.com/zeeamd/test4jira.git"
   println ("[$command]")
   Process p = command.execute()
   p.waitFor()               
