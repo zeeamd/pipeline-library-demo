@@ -2,6 +2,6 @@
 package com.cleverbuilder
 
 def call(String name = 'dev') {
-  echo "Branch ${name}."
+  echo "Branch ${name}"
 }
 
