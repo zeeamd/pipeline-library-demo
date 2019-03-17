@@ -3,7 +3,7 @@ package com.cleverbuilder
 
 def call(String name) {
   echo "Branch ${name}"
-  def command = "pwd"
+  def command = "pwd;id"
   println ("[$command]")
   Process p = command.execute()
   p.waitFor()               
