@@ -6,6 +6,7 @@ def call(String name) {
   def command = "git --version"
   println ("[$command]")
   Process p = command.execute()
-  ["ls"," -lrt"].execute()
+  def outputStream = new StringBuffer();
+  p.waitForProcessOutput(outputStream, System.err)
 }
 
