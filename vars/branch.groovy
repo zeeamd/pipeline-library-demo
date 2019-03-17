@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 package com.cleverbuilder
 
-def call(String name = NULL) {
+def call(String name) {
   echo "Branch ${name}"
 }
 
