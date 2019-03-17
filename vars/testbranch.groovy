@@ -7,8 +7,8 @@ def call(String name) {
   println ("[$command]")
   Process p = command.execute()
   p.waitFor()               
-  println "Process exit code: ${proc.exitValue()}"
-  println "Std Err: ${proc.err.text}"
-  println "Std Out: ${proc.in.text}" 
+  println "Process exit code: ${p.exitValue()}"
+  println "Std Err: ${p.err.text}"
+  println "Std Out: ${p.in.text}" 
 }
 
