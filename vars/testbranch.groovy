@@ -6,7 +6,9 @@ def call(String name) {
   def command = "git --version"
   println ("[$command]")
   Process p = command.execute()
-  def outputStream = new StringBuffer();
-  p.waitForProcessOutput(outputStream, System.err)
+  p.waitFor()               
+  println "Process exit code: ${proc.exitValue()}"
+  println "Std Err: ${proc.err.text}"
+  println "Std Out: ${proc.in.text}" 
 }
 
