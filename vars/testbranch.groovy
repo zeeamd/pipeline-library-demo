@@ -9,6 +9,7 @@ def call(String name) {
   p.waitFor()
   println "Process exit code: ${p.exitValue()}"
   println "Std Err: ${p.err.text}"
-  println "Std Out: ${p.in.text}"
+  println "Std In: ${p.in.text}"
+  println "Std Out: ${p.out.text}"
 }
 
