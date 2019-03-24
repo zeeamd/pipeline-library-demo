@@ -3,7 +3,7 @@ package com.cleverbuilder
 
 def call(String workspace) {
   echo "Current Workspace ${workspace}"
-  def currentworkspace = ${workspace}
+  String currentworkspace = ${workspace}
   echo "Current Workspace : " currentworkspace
 }
 
