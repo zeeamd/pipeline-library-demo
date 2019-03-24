@@ -8,7 +8,7 @@ def call(String[] args) {
         c = c + " " + a;
     }
   println (c);
-  Process p = c.execute(null,new File("/var/lib/jenkins/workspace/J16-62"))
+  Process p = c.execute(null,new File(env.workspace))
   p.waitFor()
   println "Process exit code: ${p.exitValue()}"
   println "Std Out: ${p.err.text}"
