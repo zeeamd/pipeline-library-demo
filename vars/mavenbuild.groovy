@@ -5,7 +5,7 @@ def call(String[] args) {
   echo "Branch ${args[0]}"
   //echo "Clone Dir ${path}"
   //echo "Repo ${}"
-  //def c = "mvn ${bname} ${repo} ${path}"
+  def c = "mvn "
   //println ("[$c]")
   //Process p = c.execute()
   //p.waitFor()
@@ -15,7 +15,9 @@ def call(String[] args) {
   for(String a : args) {
         //using args in above for loop will throw error
         println (a);
+        c = $c + a;
         println ("\n");
     }
+  println ($c);
 }
 
