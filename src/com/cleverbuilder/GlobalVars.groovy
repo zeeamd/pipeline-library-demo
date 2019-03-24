@@ -8,4 +8,6 @@ class GlobalVars {
    //
    // import com.cleverbuilder.GlobalVars
    // println GlobalVars.foo
+   
+   static String currentworkspace = "NULL"
 }
