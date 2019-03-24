@@ -15,9 +15,9 @@ def call(String[] args) {
   for(String a : args) {
         //using args in above for loop will throw error
         println (a);
-        c = $c + a;
+        c = c + a;
         println ("\n");
     }
-  println ($c);
+  println (c);
 }
 
