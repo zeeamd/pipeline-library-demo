@@ -4,10 +4,9 @@ package com.cleverbuilder
 def call(String[] args) {
   def c = "mvn"
   for(String a : args) {
-        println (a);
         c = c + " " + a;
     }
-  println (c);
+  println ("build cmd " + c);
   Process p = c.execute(null,new File(env.workspace))
   p.waitFor()
   println "Process exit code: ${p.exitValue()}"
