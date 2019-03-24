@@ -7,7 +7,7 @@ def call(String[] args) {
         c = c + " " + a;
     }
   println ("build cmd " + c);
-  Process p = c.execute(null,new File(env.workspace))
+  Process p = c.execute(null,new File(env.WORKSPACE))
   p.waitFor()
   println "Process exit code: ${p.exitValue()}"
   println "Std Out: ${p.err.text}"
