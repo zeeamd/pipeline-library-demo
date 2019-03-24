@@ -9,5 +9,5 @@ class GlobalVars {
    // import com.cleverbuilder.GlobalVars
    // println GlobalVars.foo
    
-   public String currentworkspace = "NULL"
+   String currentworkspace
 }
