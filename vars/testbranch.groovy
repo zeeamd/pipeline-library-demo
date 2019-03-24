@@ -1,10 +1,11 @@
 #!/usr/bin/env groovy
 package com.cleverbuilder
 
-def call(String bname,String path) {
+def call(String bname,String repo,String path) {
   echo "Branch ${bname}"
   echo "Clone Dir ${path}"
-  def c = "git clone --branch ${bname} https://github.com/zeeamd/test4jira.git ${path}"
+  echo "Repo ${repo}"
+  def c = "git clone --branch ${bname} ${repo} ${path}"
   println ("[$c]")
   Process p = c.execute()
   p.waitFor()
